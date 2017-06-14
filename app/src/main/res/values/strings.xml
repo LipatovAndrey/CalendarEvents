@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">CalendarEvents1</string>
+    <string name="dialog_button_add_text">Добавить</string>
+    <string name="dialog_button_cancel_text">отмена</string>
+    <string name="description">Description</string>
+    <string name="title">Title</string>
+    <string name="date_formatter">%1$02d : %2$02d</string>
+    <string name="long_click_dialog_negative_button_text">Удалить</string>
+    <string name="long_click_dialog_positive_button_text">изменить</string>
+    <string name="long_click_dialog_title">удалить или изменить ?</string>
+    <string name="dialog_button_change_text">Изменить</string>
+    <string name="button_add_text">добавить событие</string>
+    <string name="Title">Title</string>
+    <string name="descriptionText">description</string>
+</resources>

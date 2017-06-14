@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/dialogBackground"
+              android:orientation="vertical"
+              android:padding="@dimen/dialog_padding"
+              android:weightSum="1"
+    >
+
+    <EditText
+        android:id="@+id/changedialogTitleOfEvent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/editText_height"
+        android:enabled="true"
+        android:hint="@string/title"
+        android:inputType="textImeMultiLine"
+        >
+
+        <requestFocus
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </EditText>
+
+
+    <EditText
+        android:id="@+id/changeDialogDescriptionOfEvent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/editText_height"
+        android:enabled="true"
+        android:hint="@string/description"
+        android:inputType="textImeMultiLine"
+        />
+
+    <TimePicker
+        android:id="@+id/changeDialogTimePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/timepicker_height"
+        android:scrollbars="vertical"
+        android:soundEffectsEnabled="true"
+        android:visibility="visible"
+        >
+
+    </TimePicker>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/changeDialogButtonChange"
+            android:layout_width="@dimen/dialog_button_height"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/dialog_button_change_text"/>
+
+        <Button
+            android:id="@+id/changeDialogButtonCancel"
+            android:layout_width="@dimen/dialog_button_height"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/dialog_button_cancel_text"/>
+    </LinearLayout>
+
+</LinearLayout>

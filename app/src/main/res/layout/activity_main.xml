@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context="com.example.calendarevents1.MainActivity">
+
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/calendar_margin"
+        android:layout_weight="1"
+        android:background="@color/calendarBackground"
+        android:theme="@style/AppTheme"
+        android:visibility="visible"
+        android:weekNumberColor="@color/colorPrimary"
+        android:weekSeparatorLineColor="@android:color/darker_gray"/>
+
+    <ListView
+        android:id="@+id/eventsListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/listView_margin"
+        android:layout_weight="1"
+        >
+    </ListView>
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.65"
+        android:text="@string/button_add_text"/>
+</LinearLayout>

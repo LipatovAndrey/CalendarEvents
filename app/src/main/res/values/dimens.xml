@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="calendar_margin">20dp</dimen>
+    <dimen name="dialog_button_height">150dp</dimen>
+    <dimen name="eventTitleMarginTop">10dp</dimen>
+    <dimen name="eventDescriptionMarginTop">20dp</dimen>
+    <dimen name="timeStartMarginleft">12dp</dimen>
+    <dimen name="editText_height">50dp</dimen>
+    <dimen name="dialog_padding">30dp</dimen>
+    <dimen name="timepicker_height">96dp</dimen>
+    <dimen name="listView_margin">16dp</dimen>
+</resources>

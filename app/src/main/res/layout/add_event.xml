@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/dialogBackground"
+              android:orientation="vertical"
+              android:weightSum="1"
+              android:padding="@dimen/dialog_padding"
+    >
+
+    <EditText
+        android:id="@+id/dialogTitleOFEvent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/editText_height"
+        android:enabled="true"
+        android:hint="@string/title"
+        android:inputType="textImeMultiLine"
+        >
+        <requestFocus
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </EditText>
+
+
+    <EditText
+        android:id="@+id/dialogDescriptionOfEvent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/editText_height"
+        android:enabled="true"
+        android:hint="@string/description"
+        android:inputType="textImeMultiLine"
+        />
+
+    <TimePicker
+        android:id="@+id/dialogtimePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/timepicker_height"
+        android:scrollbars="vertical"
+        android:soundEffectsEnabled="true"
+        android:visibility="visible"
+        >
+
+    </TimePicker>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/dialogButtonAdd"
+            android:layout_width="@dimen/dialog_button_height"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/dialog_button_add_text"/>
+
+        <Button
+            android:id="@+id/dialogButtonCancel"
+            android:layout_width="@dimen/dialog_button_height"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/dialog_button_cancel_text"/>
+    </LinearLayout>
+
+</LinearLayout>
