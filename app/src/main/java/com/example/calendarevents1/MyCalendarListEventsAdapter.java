@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
@@ -15,12 +16,12 @@ import java.util.List;
  */
 
 public class MyCalendarListEventsAdapter extends BaseAdapter {
-    private final List<MyCalendarEvent> mMyCalendarEventList;
+    private List<MyCalendarEvent> mMyCalendarEventList;
 
     public MyCalendarListEventsAdapter(List<MyCalendarEvent> myCalendarEventList) {
-        mMyCalendarEventList = myCalendarEventList;
-        Collections.sort(myCalendarEventList);
-        Log.d("Adapter", String.valueOf(mMyCalendarEventList.size()));
+        mMyCalendarEventList = new ArrayList<>();
+        mMyCalendarEventList.addAll(myCalendarEventList);
+        Collections.sort(mMyCalendarEventList);
     }
 
     @Override
