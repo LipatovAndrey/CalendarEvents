@@ -21,6 +21,7 @@ public class MyCalendarListEventsAdapter extends BaseAdapter {
         mMyCalendarEventList = new ArrayList<>();
         mMyCalendarEventList.addAll(myCalendarEventList);
         Collections.sort(mMyCalendarEventList);
+        
     }
 
     @Override
